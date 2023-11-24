@@ -1,0 +1,59 @@
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747792_1280.jpg);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 25px;
+}
+
+table, th, td{
+
+    border: 5px solid black;
+    border-collapse: collapse;  
+    text-align: center;
+    padding: 5px;
+}
+
+
+h1{
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 70px;
+    
+}
+
+h2{
+    font-family: 'New Rocker', cursive;
+}
+
+th{
+    font-size: 30px;
+    font-family: 'Metal Mania', cursive;
+}
+
+td{
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 18px;
+}
+
+#video{
+    margin-left: 240px;
+}
+
+td, th{
+    
+    background-color: rgba(95, 46, 0, 0.486);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portada{
+    height: 100px;
+}
