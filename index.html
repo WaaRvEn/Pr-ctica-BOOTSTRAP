@@ -29,9 +29,11 @@
     font-size: 20px;
     color: #111;
   }
+
   .container {
     padding: 80px 120px;
   }
+
   .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -159,6 +161,11 @@
   textarea {
     resize: none;
   }
+
+  .portada{
+    height: 100px;
+  }
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -176,9 +183,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#grupo">GRUPO</a></li>
+        <li><a href="#discografia">DISCOGRAFÍA</a></li>
+        <li><a href="#premios">PREMIOS</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
           <span class="caret"></span></a>
@@ -241,9 +248,8 @@
 </div>
 
 <!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h3>THE BAND</h3>
-  <p><em>We love music!</em></p>
+<div id="grupo" class="container text-center">
+  <h3 class="text-center">LINKIN PARK</h3>
   <p>Linkin Park es una banda estadounidense creada en 1996 en Agoura Hills, California. El nombre del grupo hace
     referencia al parque de Santa Mónica Lincoln Park.
     El grupo es conocido por su estilo musical que mezcla el rock, rap y sonidos electrónicos. Al inicio se les
@@ -261,47 +267,44 @@
   <br>
   <div class="row">
     <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
+      <p class="text-center"><strong>Vocalista</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="bandmember.jpg" class="img-circle person" alt="ver" width="255" height="255">
       </a>
       <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
-        <p>Member since 1988</p>
+        <p>Chester Bennington</p>
+        <p>Mike Shinoda</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
+      <p class="text-center"><strong>Productores</strong></p><br>
       <a href="#demo2" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="bandmember.jpg" class="img-circle person" alt="ver" width="255" height="255">
       </a>
       <div id="demo2" class="collapse">
-        <p>Drummer</p>
-        <p>Loves drummin'</p>
-        <p>Member since 1988</p>
+        <p>Rick Rubin</p>
+        <p>Brand Delson</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Name</strong></p><br>
+      <p class="text-center"><strong>Instrumentos</strong></p><br>
       <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="bandmember.jpg" class="img-circle person" alt="ver" width="255" height="255">
       </a>
       <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
+        <p>Dave Farrell</p>
+        <p>Joe Hahn</p>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Container (TOUR Section) -->
-<div id="tour" class="bg-1">
+<div id="discografia" class="bg-1">
   <div class="container">
-    <h3 class="text-center">TOUR DATES</h3>
-    <p class="text-center">
-      <table>
+    <h3 class="text-center">DISCOGRAFÍA</h3>
+    
+      <table class="table table-hover">
 
         <tr>
 
@@ -341,7 +344,7 @@
 
         </tr>
 
-      <tr>
+        <tr>
 
           <th>Productores</th>
           <td>Don Gilmore</td>
@@ -351,9 +354,9 @@
           <td>Rick Rubin y Mike Shinod</td>
           <td>Brand Delson y Mike Shinoda</td>
           <td>Brad Delson y Mike Shinoda</td>
-      </tr>
+        </tr>
 
-      <tr>
+        <tr>
 
           <th>Portada</th>
           <td>
@@ -377,110 +380,93 @@
           <td>
               <img class="portada" src="https://m.media-amazon.com/images/I/71AZAP2lk7L._SL1432_.jpg">
           </td>
-      </tr>
+        </tr>
 
       </table>
-    </p>
-    <ul class="list-group">
-      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
-      <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
-      <li class="list-group-item">November <span class="badge">3</span></li> 
-    </ul>
-    
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="paris.jpg" alt="Paris" width="400" height="300">
-          <p><strong>Paris</strong></p>
-          <p>Friday 27 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="newyork.jpg" alt="New York" width="400" height="300">
-          <p><strong>New York</strong></p>
-          <p>Saturday 28 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-          <p><strong>San Francisco</strong></p>
-          <p>Sunday 29 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-    </div>
+
   </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-        </div>
-        <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-              <input type="number" class="form-control" id="psw" placeholder="How many?">
-            </div>
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-            </div>
-              <button type="submit" class="btn btn-block">Pay 
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-          <p>Need <a href="#">help?</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
+<div id="premios" class="container">
+  <h3 class="text-center">PREMIOS</h3>
+  <p class="text-center">
+    El grupo ha estado nominado a 193 premios de los cuales ha ganado 50 de ellos.<br>
+    Los más importantes entre ellos son los premios MTV y los Grammy, que son los más importante dentro de la industria musical. 
+  </p>
+  <div class="table-responsive">
 
-  <div class="row">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
+    <table class="table table-striped">
+
+      <tr>
+
+        <th>Premios Linkin Park</th>
+        <th>MTV Europa</th>
+        <th>Grammy</th>
+
+      </tr>
+
+      <tr>
+
+        <th>Nominaciones</th>
+        <td>17</td>
+        <td>6</td>
+                    
+      </tr>
+
+      <tr>
+
+        <th>Ganados</th>
+        <td>9</td>
+        <td>2</td>
+
+      </tr>
+
+      <tr>
+
+        <th rowspan="8">Categoría ganadas</th>
+        <td>Mejor Artista Hard Rock</td>
+        <td rowspan="4">Mejor Interpretación de Hard Rock</td>
+
+      </tr>
+
+      <tr>
+        <td>Mejor Grupo</td>                   
+      </tr>
+
+      <tr>
+        <td>Mejor Artista Rock</td>
+      </tr>
+
+      <tr>
+        <td>Mejor Grupo</td>
+      </tr>
+
+      <tr>
+
+        <td>Mejor Actuación World Stage</td>
+        <td rowspan="4">Mejor colaboración de rap/cantada</td>
+
+      </tr>
+
+      <tr>
+        <td>Mejor Actuación en Vivo</td>
+      </tr>
+
+      <tr>
+        <td>Mejor artista Rock</td>
+      </tr>
+
+      <tr>
+        <td>Mejor Artista Rock</td>                    
+      </tr>
+
+    </table>
   </div>
+
+</div>
+
   <br>
   <h3 class="text-center">From The Blog</h3>  
   <ul class="nav nav-tabs">
